@@ -1,0 +1,57 @@
+::-webkit-scrollbar-button {
+  display: none; }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #780021;
+    border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #5e001a; }
+
+::-webkit-scrollbar-track {
+  background-color: #040404; }
+
+  ::-webkit-scrollbar {
+    width: 8px; }
+
+    * {
+      font-family: 'Open Sans'; }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        min-height: 100vh; }
+
+        #header {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          min-height: 15vh;
+          width: 100%; }
+          #header #header-banner {
+            background: #910028;
+            height: 10vh;
+            width: 100%; }
+            #header #header-nav {
+              background: #373737;
+              display: flex;
+              justify-content: flex-start;
+              padding: 1rem 0;
+              width: 100%; }
+              @media only screen and (max-width: 640px) {
+                #header #header-nav {
+                  font-size: 0.5rem;
+                  justify-content: center;   }
+}
+                #header #header-nav .nav-item {
+                  color: white;
+                  font-size: 1.75rem;
+                  margin: 0 3rem;
+                  text-align: center;
+                  text-decoration: none; }
+                  @media only screen and (max-width: 640px) {
+                    #header #header-nav .nav-item {
+                      font-size: 1.5rem;
+                      margin: 0 1.5rem;   }
+}

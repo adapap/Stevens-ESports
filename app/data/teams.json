@@ -1,0 +1,82 @@
+{
+    "overwatch": {
+        "logo": "logo/overwatch.png",
+        "name": "Overwatch",
+        "teams": [
+            {
+                "name": "What Howe?",
+                "level": "Varsity",
+                "game": "Overwatch",
+                "players": [
+                    {
+                        "tag": "Legendary",
+                        "name": "Adam Papenhausen",
+                        "major": "Business & Technology",
+                        "year": "2022"
+                    },
+                    {
+                        "tag": "Angular",
+                        "name": "Miles Rosenberg",
+                        "major": "Computer Science",
+                        "year": "2022"
+                    },
+                    {
+                        "tag": "NisePanda",
+                        "name": "Tegh Johar",
+                        "major": "Applied Mathematics",
+                        "year": "2022"
+                    },
+                    {
+                        "tag": "NisePanda",
+                        "name": "Tegh Johar",
+                        "major": "Applied Mathematics",
+                        "year": "2022"
+                    },
+                    {
+                        "tag": "NisePanda",
+                        "name": "Tegh Johar",
+                        "major": "Applied Mathematics",
+                        "year": "2022"
+                    },
+                    {
+                        "tag": "NisePanda",
+                        "name": "Tegh Johar",
+                        "major": "Applied Mathematics",
+                        "year": "2022"
+                    },
+                    {
+                        "tag": "NisePanda",
+                        "name": "Tegh Johar",
+                        "major": "Applied Mathematics",
+                        "year": "2022"
+                    }
+                ]
+            },
+            {
+                "name": "Altofer's Avengers",
+                "level": "Junior Varsity",
+                "game": "Overwatch",
+                "players": [
+                    {
+                        "tag": "RobotWizard",
+                        "name": "Dylan Regan",
+                        "major": "Computer Science",
+                        "year": "2022"
+                    }
+                ]
+            }
+        ]
+    },
+    "cs:go": {
+        "logo": "logo/csgo.png",
+        "name": "Counter Strike: Global Offensive",
+        "teams": [
+            {
+                "name": "Aupaire Hand",
+                "level": "Varsity",
+                "game": "CS:GO",
+                "players": []
+            }
+        ]
+    }
+}

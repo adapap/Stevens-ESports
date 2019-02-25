@@ -1,0 +1,32 @@
+extends base.pug
+
+block css
+    +stylesheet('rosters.css')
+
+block scripts
+    +script('scroll-top.js')
+
+block content
+    #content
+        for game in games
+            for team in game.teams
+                .team-container(id='#{team._id}')
+                    .team-name #{team.game} - #{team.level}
+                    .team-players
+                        for player in team.players
+                            .team-player-card
+                                .player-image IMG
+                                .player-info
+                                    .player-tag #{player.tag}
+                                    .player-name #{player.name}
+                                    .player-major #{player.major} - #{player.year}
+    #footer
+        #games
+            for game in games
+                .game-container
+                    img.game-logo(src="static/assets/#{game.logo}", alt="#{game.name}")
+                    .game-teams
+                        for team in game.teams
+                            a.team(href='##{team._id}') #{team.name}
+        #scroll-top-container
+            .scroll-top-button ∧

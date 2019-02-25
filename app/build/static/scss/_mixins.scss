@@ -1,0 +1,29 @@
+@mixin mobile {
+    @media only screen and (max-width: 640px) {
+        @content;
+    }
+}
+
+@mixin scrollbar {
+
+    ::-webkit-scrollbar-button { 
+        display: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: darken($stevens-red, 5%);
+        border-radius: 10px;
+
+        &:hover {
+            background-color: darken($stevens-red, 10%);
+        }
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: darken($bg-nav, 20%);
+    }
+    
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+}

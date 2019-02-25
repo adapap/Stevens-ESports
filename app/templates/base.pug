@@ -1,0 +1,19 @@
+include _mixins.pug
+
+doctype html
+html
+    head
+        block title
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        // Favicon
+        // link(href="{{ url_for('static', filename='assets/favicon.ico') }}", type='image/png', rel='icon')
+        // JQuery
+        script(src="{{ url_for('static', filename='scripts/jquery.min.js') }}")
+        // Open Sans Font
+        link(href='https://fonts.googleapis.com/css?family=Open+Sans', rel='stylesheet')
+        block css
+    body
+        include components/header.pug
+        block content
+    block scripts

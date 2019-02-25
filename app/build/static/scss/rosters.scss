@@ -1,0 +1,171 @@
+@import '__base.scss';
+
+body {
+    background: $bg-roster-pattern;
+}
+
+#content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12vh;
+    width: 100%;
+}
+
+.team-container {
+    background: $bg-team-container;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 0;
+    width: 85%;
+
+    .team-name {
+        @include mobile {
+            font-size: 1.75rem;
+        }
+        color: $stevens-red;
+        font-size: 2rem;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+        width: 100%;
+    }
+
+    .team-players {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 100%;
+        padding: 1rem;
+
+        .team-player-card {
+            align-items: center;
+            //border: 3px solid black;
+            box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+            display: flex;
+            flex-direction: column;
+            height: 15rem;
+            justify-content: center;
+            margin: 1rem 1rem;
+            width: 12.5rem;
+
+            .player-image {
+                align-items: center;
+                background: darken(white, 5%);
+                display: flex;
+                height: 60%;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .player-info {
+                align-items: center;
+                background: $stevens-red;
+                box-sizing: border-box;
+                color: white;
+                display: flex;
+                flex-direction: column;
+                font-size: 0.85rem;
+                height: 40%;
+                justify-content: space-between;
+                padding: 1rem;
+                text-align: center;
+                text-shadow: 1px 1px 5px darken($stevens-red, 15%);
+                width: 100%;
+
+                .player-tag {
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+
+                .player-major {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    align-items: center;
+    background: $bg-nav;
+    bottom: 0;
+    display: flex;
+    flex-shrink: 0;
+    height: 12.5vh;
+    left: 0;
+    position: fixed;
+    width: 100%;
+
+    #games {
+        align-items: center;
+        background: lighten($bg-nav, 5%);
+        display: flex;
+        height: 100%;
+        justify-content: flex-start;
+        overflow-x: auto;
+        width: 90%;
+
+        .game-container {
+            align-items: center;
+            display: flex;
+            height: 100%;
+            margin: 0 0.5rem;
+            width: 15rem;
+
+            .game-logo {
+                width: 25%;
+            }
+
+            .game-teams {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center;
+
+                .game-logo {
+                    height: 100%;
+                    margin: 0;
+                    width: auto;
+                }
+
+                .team {
+                    color: white;
+                    margin-left: 1rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    #scroll-top-container {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 10%;
+
+        .scroll-top-button {
+            align-items: center;
+            background: $stevens-red;
+            border-radius: 50%;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            font-size: 1.25rem;
+            font-weight: bold;
+            justify-content: center;
+            padding: 0.25rem 0.75rem 0.5rem 0.75rem;
+
+            &:hover {
+                background: darken($stevens-red, 5%);
+            }
+
+            &:active {
+                background: darken($stevens-red, 10%);
+            }
+        }
+    }
+}
