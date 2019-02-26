@@ -23,17 +23,39 @@
         min-height: 100vh; }
 
         #header {
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -ms-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
           align-items: center;
           display: flex;
           flex-direction: column;
-          justify-content: center;
-          min-height: 15vh;
+          height: 15vh;
+          justify-content: flex-start;
+          position: fixed;
           width: 100%; }
+          #header.hide {
+            height: 0;
+            opacity: 0; }
+            #header.scrolling #header-banner {
+              -webkit-transition: all 0.3s ease-in-out;
+              -moz-transition: all 0.3s ease-in-out;
+              -ms-transition: all 0.3s ease-in-out;
+              -o-transition: all 0.3s ease-in-out;
+              transition: all 0.3s ease-in-out;
+              height: 0; }
           #header #header-banner {
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
             background: #910028;
             height: 10vh;
             width: 100%; }
             #header #header-nav {
+              align-items: center;
               background: #373737;
               display: flex;
               justify-content: flex-start;
@@ -55,3 +77,27 @@
                       font-size: 1.5rem;
                       margin: 0 1.5rem;   }
 }
+
+#stream-embed {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0; }
+
+  #content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh; }
+    #content #about {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 60%; }
+      #content #about .title {
+        font-size: 1.5rem; }
+        #content #about .description {
+          margin-bottom: 2rem;
+          margin-top: 1rem;
+          white-space: pre; }

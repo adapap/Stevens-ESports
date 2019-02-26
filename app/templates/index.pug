@@ -4,4 +4,15 @@ block css
     +stylesheet('index.css')
 
 block content
-    p This is a Flask application.
+    #content
+        include components/stream_embed.pug
+        #about
+            .title About Us
+            .description
+                | I am a Torbjorn one-trick.
+                | I am a Torbjorn two-trick.
+                | I am a Torbjorn three-trick.
+                | I am a Torbjorn four-trick.
+                | I am a Torbjorn five-trick.
+                | I am a Torbjorn six-trick.
+                | I am a Torbjorn seven-trick.

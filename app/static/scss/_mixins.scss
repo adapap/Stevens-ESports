@@ -27,3 +27,11 @@
         width: 8px;
     }
 }
+
+@mixin transition($time: 0.2s, $what: all, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition: $what $time $how;
+    -ms-transition: $what $time $how;
+    -o-transition: $what $time $how;
+    transition: $what $time $how;
+}

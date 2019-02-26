@@ -15,14 +15,30 @@ body {
 }
 
 #header {
+    @include transition(0.3s);
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    min-height: 15vh;
+    height: 15vh;
+    justify-content: flex-start;
+    position: fixed;
     width: 100%;
 
+    &.hide {
+        height: 0;
+        opacity: 0;
+    }
+
+    &.scrolling {
+
+        #header-banner {
+            @include transition(0.3s);
+            height: 0;
+        }
+    }
+
     #header-banner {
+        @include transition(0.5s);
         background: $stevens-red;
         height: 10vh;
         width: 100%;
@@ -33,6 +49,7 @@ body {
             font-size: 0.5rem;
             justify-content: center;
         }
+        align-items: center;
         background: $bg-nav;
         display: flex;
         justify-content: flex-start;
@@ -51,4 +68,11 @@ body {
             text-decoration: none;
         }
     }
+}
+
+#stream-embed {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
 }

@@ -1,1 +1,26 @@
 @import '__base.scss';
+
+#content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 15vh;
+
+    #about {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        
+        .title {
+            font-size: 1.5rem;
+        }
+
+        .description {
+            margin-bottom: 2rem;
+            margin-top: 1rem;
+            white-space: pre;
+        }
+    }
+}
