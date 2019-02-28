@@ -1,0 +1,38 @@
+extends base.pug
+
+block css
+    +stylesheet('news.css')
+
+block scripts
+    +script('show-team-scores.js')
+
+block content
+    #content
+        .main-content
+            #scores
+                .score-title Scores
+                .score-content
+                    .game-nav
+                        for game in games
+                            .game-name(data-game='#{game.name}') #{game.name}
+                    .scoreboard
+                        for game in games
+                            .scoreboard-teams(data-game-info='#{game.name}')
+                                .offset [Misc]
+                                for team in game.teams
+                                    .team-name #{team.name}
+                            .scoreboard-results(data-game-info='#{game.name}')
+                                .total-row
+                                    .row-name Total
+                                    for team in game.teams
+                                        .data #{team.record}
+                                each i in range(0, game.num_matches)
+                                    .match-row
+                                        .row-name Match !{i + 1}
+                                        for team in game.teams
+                                            if i < team.scores|length
+                                                .data #{team.scores[i].get('record')}
+                                            else
+                                                .data -
+                                    
+            include components/twitter_feed.pug

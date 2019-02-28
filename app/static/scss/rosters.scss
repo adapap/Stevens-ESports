@@ -1,18 +1,5 @@
 @import '__base.scss';
 
-body {
-    background: $bg-roster-pattern;
-}
-
-#content {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 12vh;
-    margin-top: 15vh;
-    width: 100%;
-}
-
 .team-container {
     background: $bg-team-container;
     border-bottom: 1px solid gray;

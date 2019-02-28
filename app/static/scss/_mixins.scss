@@ -4,27 +4,27 @@
     }
 }
 
-@mixin scrollbar {
+@mixin scrollbar($width, $scroll-color, $track-color, $radius: 10px) {
 
     ::-webkit-scrollbar-button { 
         display: none;
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: darken($stevens-red, 5%);
-        border-radius: 10px;
+        background-color: darken($scroll-color, 5%);
+        border-radius: $radius;
 
         &:hover {
-            background-color: darken($stevens-red, 10%);
+            background-color: darken($scroll-color, 10%);
         }
     }
 
     ::-webkit-scrollbar-track {
-        background-color: darken($bg-nav, 20%);
+        background-color: $track-color;
     }
     
     ::-webkit-scrollbar {
-        width: 8px;
+        width: $width;
     }
 }
 

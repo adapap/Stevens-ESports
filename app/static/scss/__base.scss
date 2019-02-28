@@ -1,13 +1,14 @@
 @import '_mixins.scss';
 @import '_variables.scss';
 
-@include scrollbar;
+@include scrollbar($width: 8px, $radius: 10px, $scroll-color: $stevens-red, $track-color: $bg-nav);
 
 * {
     font-family: 'Open Sans';
 }
 
 body {
+    background: $bg-pattern;
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -19,9 +20,11 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    height: 15vh;
+    height: 30vh;
     justify-content: flex-start;
+    left: 0;
     position: fixed;
+    top: 0;
     width: 100%;
 
     &.hide {
@@ -39,8 +42,10 @@ body {
 
     #header-banner {
         @include transition(0.5s);
-        background: $stevens-red;
-        height: 10vh;
+        background: url('/static/assets/banner.png');
+        background-position: center center;
+        background-size: cover;
+        height: 25vh;
         width: 100%;
     }
 
@@ -52,6 +57,7 @@ body {
         align-items: center;
         background: $bg-nav;
         display: flex;
+        height: 5vh;
         justify-content: flex-start;
         padding: 1rem 0;
         width: 100%;
@@ -70,9 +76,11 @@ body {
     }
 }
 
-#stream-embed {
+#content {
     align-items: center;
     display: flex;
-    justify-content: center;
-    margin: 1rem 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 30vh auto 12vh auto;
+    width: 100%;
 }

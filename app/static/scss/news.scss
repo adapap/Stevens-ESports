@@ -1,0 +1,128 @@
+@import '__base.scss';
+
+.main-content {
+    @include scrollbar($width: 5px, $scroll-color: #aaa, $track-color: #fff);
+    align-items: flex-start;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    width: 85%;
+
+    #scores {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5rem 0;
+        width: 60%;
+
+        .score-title {
+            color: $stevens-red;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .score-content {
+            border: 1px solid $bg-nav;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: 0.5rem;
+            width: 100%;
+        }
+
+        .game-nav {
+            align-items: center;
+            background: $bg-nav;
+            color: white;
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+
+            .game-name {
+                @include transition;
+                cursor: pointer;
+                font-size: 1.1rem;
+                padding: 0.5rem 0.75rem;
+
+                &:hover {
+                    background: lighten($bg-nav, 10%);
+                }
+
+                &.selected {
+                    background: $stevens-red;
+                }
+            }
+        }
+
+        .scoreboard {
+            $row-title: 15%;
+            $row-data: 25%;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+
+            .scoreboard-teams {
+                align-items: center;
+                background: darken(white, 15%);
+                box-sizing: border-box;
+                display: none;
+                padding: 0.5rem;
+                text-align: center;
+                width: 100%;
+
+                &.selected {
+                    display: flex;
+                }
+
+                .offset {
+                    width: $row-title;
+                }
+
+                .team-name {
+                    font-weight: bold;
+                    width: $row-data;
+                }
+            }
+
+            .scoreboard-results {
+                background: darken(white, 5%);
+                box-sizing: border-box;
+                display: none;
+                flex-direction: column;
+                padding: 0.5rem;
+                width: 100%;
+
+                &.selected {
+                    display: flex;
+                }
+
+                .total-row, .match-row {
+                    display: flex;
+                    padding: 0.25rem 0;
+                    text-align: center;
+
+                    &:not(:last-child) {
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                    }
+
+                    .row-name {
+                        font-weight: bold;
+                        width: $row-title;
+                    }
+
+                    .data {
+                        width: $row-data;
+                    }
+                }
+            }
+        }
+    }
+
+    #twitter-feed {
+        display: flex;
+        justify-content: center;
+        margin: 1.5rem 0;
+        max-height: 100vh;
+        overflow-y: scroll;
+        width: 30%;
+    }
+}

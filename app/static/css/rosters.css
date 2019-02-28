@@ -8,7 +8,7 @@
       background-color: #5e001a; }
 
 ::-webkit-scrollbar-track {
-  background-color: #040404; }
+  background-color: #373737; }
 
   ::-webkit-scrollbar {
     width: 8px; }
@@ -17,6 +17,7 @@
       font-family: 'Open Sans'; }
 
       body {
+        background: url('/static/assets/bg-pattern-1.png');
         display: flex;
         flex-direction: column;
         margin: 0;
@@ -31,9 +32,11 @@
           align-items: center;
           display: flex;
           flex-direction: column;
-          height: 15vh;
+          height: 30vh;
           justify-content: flex-start;
+          left: 0;
           position: fixed;
+          top: 0;
           width: 100%; }
           #header.hide {
             height: 0;
@@ -51,13 +54,16 @@
             -ms-transition: all 0.5s ease-in-out;
             -o-transition: all 0.5s ease-in-out;
             transition: all 0.5s ease-in-out;
-            background: #910028;
-            height: 10vh;
+            background: url('/static/assets/banner.png');
+            background-position: center center;
+            background-size: cover;
+            height: 25vh;
             width: 100%; }
             #header #header-nav {
               align-items: center;
               background: #373737;
               display: flex;
+              height: 5vh;
               justify-content: flex-start;
               padding: 1rem 0;
               width: 100%; }
@@ -78,84 +84,75 @@
                       margin: 0 1.5rem;   }
 }
 
-#stream-embed {
+#content {
   align-items: center;
   display: flex;
-  justify-content: center;
-  margin: 1rem 0; }
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 30vh auto 12vh auto;
+  width: 100%; }
 
-  body {
-    background: lightgray; }
-
-    #content {
+  .team-container {
+    background: white;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem 0;
+    width: 85%; }
+    .team-container .team-name {
+      color: #910028;
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+      width: 100%; }
+      @media only screen and (max-width: 640px) {
+        .team-container .team-name {
+          font-size: 1.75rem;   }
+}
+    .team-container .team-players {
       align-items: center;
       display: flex;
-      flex-direction: column;
-      margin-bottom: 12vh;
-      margin-top: 15vh;
-      width: 100%; }
-
-      .team-container {
-        background: white;
-        border-bottom: 1px solid gray;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      max-width: 100%;
+      padding: 1rem; }
+      .team-container .team-players .team-player-card {
+        align-items: center;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
         display: flex;
         flex-direction: column;
+        height: 15rem;
         justify-content: center;
-        padding: 1.5rem 0;
-        width: 85%; }
-        .team-container .team-name {
-          color: #910028;
-          font-size: 2rem;
-          font-weight: bold;
-          text-align: center;
-          text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-          width: 100%; }
-          @media only screen and (max-width: 640px) {
-            .team-container .team-name {
-              font-size: 1.75rem;   }
-}
-        .team-container .team-players {
+        margin: 1rem 1rem;
+        width: 12.5rem; }
+        .team-container .team-players .team-player-card .player-image {
           align-items: center;
+          background: #f2f2f2;
           display: flex;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          max-width: 100%;
-          padding: 1rem; }
-          .team-container .team-players .team-player-card {
+          height: 60%;
+          justify-content: center;
+          width: 100%; }
+          .team-container .team-players .team-player-card .player-info {
             align-items: center;
-            box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.4);
+            background: #910028;
+            box-sizing: border-box;
+            color: white;
             display: flex;
             flex-direction: column;
-            height: 15rem;
-            justify-content: center;
-            margin: 1rem 1rem;
-            width: 12.5rem; }
-            .team-container .team-players .team-player-card .player-image {
-              align-items: center;
-              background: #f2f2f2;
-              display: flex;
-              height: 60%;
-              justify-content: center;
-              width: 100%; }
-              .team-container .team-players .team-player-card .player-info {
-                align-items: center;
-                background: #910028;
-                box-sizing: border-box;
-                color: white;
-                display: flex;
-                flex-direction: column;
-                font-size: 0.85rem;
-                height: 40%;
-                justify-content: space-between;
-                padding: 1rem;
-                text-align: center;
-                text-shadow: 1px 1px 5px #440013;
-                width: 100%; }
-                .team-container .team-players .team-player-card .player-info .player-tag {
-                  font-weight: bold;
-                  text-transform: uppercase; }
-                  .team-container .team-players .team-player-card .player-info .player-major {
-                    font-size: 0.75rem; }
+            font-size: 0.85rem;
+            height: 40%;
+            justify-content: space-between;
+            padding: 1rem;
+            text-align: center;
+            text-shadow: 1px 1px 5px #440013;
+            width: 100%; }
+            .team-container .team-players .team-player-card .player-info .player-tag {
+              font-weight: bold;
+              text-transform: uppercase; }
+              .team-container .team-players .team-player-card .player-info .player-major {
+                font-size: 0.75rem; }
 
 #footer {
   align-items: center;
