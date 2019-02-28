@@ -12,49 +12,41 @@
                     {
                         "opponent": "Unknown",
                         "record": "2-0",
-                        "result": "W",
                         "date": "01/20/2019 5:30PM"
                     },
                     {
                         "opponent": "CNU?",
                         "record": "1-2",
-                        "result": "L",
                         "date": "01/20/2019 7:00PM"
                     },
                     {
                         "opponent": "Unknown",
                         "record": "2-0",
-                        "result": "W",
                         "date": "01/20/2019 8:30PM"
                     },
                     {
                         "opponent": "Unknown",
                         "record": "2-0",
-                        "result": "W",
                         "date": "01/27/2019 5:30PM"
                     },
                     {
                         "opponent": "Unknown",
                         "record": "2-0",
-                        "result": "W",
                         "date": "01/27/2019 7:00PM"
                     },
                     {
                         "opponent": "NJIT",
                         "record": "0-2",
-                        "result": "W",
                         "date": "01/27/2019 8:30PM"
                     },
                     {
                         "opponent": "Unknown",
                         "record": "2-0",
-                        "result": "W",
                         "date": "02/03/2019 7:00PM"
                     },
                     {
                         "opponent": "Unknown",
                         "record": "2-0",
-                        "result": "W",
                         "date": "02/03/2019 8:30PM"
                     },
                     {
@@ -66,13 +58,11 @@
                     {
                         "opponent": "Unknown",
                         "record": "2-0",
-                        "result": "W",
                         "date": "02/10/2019 8:30PM"
                     },
                     {
                         "opponent": "Unknown",
                         "record": "2-0",
-                        "result": "W",
                         "date": "02/17/2019 7:00PM"
                     },
                     {
@@ -84,13 +74,11 @@
                     {
                         "opponent": "Hofstra",
                         "record": "2-0",
-                        "result": "W",
                         "date": "02/24/2019 7:00PM"
                     },
                     {
                         "opponent": "Columbia",
                         "record": "2-0",
-                        "result": "W",
                         "date": "02/24/2019 9:00PM"
                     }
                 ],

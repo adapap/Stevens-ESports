@@ -28,15 +28,12 @@ class Team:
         return clean(f'{self.game}-{self.name}')
 
     @property
-    def get_score(self, date):
-        """Gets the score for a given week if it exists."""
-        return next((score.get('record') for score in self.scores if score.get('date') == date), '-')
-
-    @property
     def record(self):
         """Returns the number of games won and lost."""
-        result = lambda score: len([x for x in self.scores if x.get('result') == score])
-        return f"{result('W')}-{result('L')}"
+        scores = [w - l for w, l in [map(int, score.get('record').split('-')) for score in self.scores]]
+        wins = len([x for x in scores if x > 0])
+        losses = len([x for x in scores if x < 0])
+        return f"{wins}-{losses}"
 
 class Game:
     """A collection of teams for a game."""
