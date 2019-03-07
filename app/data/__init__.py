@@ -19,7 +19,6 @@ class Team:
     def __init__(self, data):
         self.name = data.get('name')
         self.level = data.get('level')
-        self.game = data.get('game')
         self.scores = data.get('scores')
         self.players = [Player(x) for x in data.get('players')]
 

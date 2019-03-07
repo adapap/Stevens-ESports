@@ -11,7 +11,7 @@ block content
         for game in games
             for team in game.teams
                 .team-container(id='#{team._id}')
-                    .team-name #{team.game} - #{team.level}
+                    .team-name #{game.name} - #{team.level}
                     .team-players
                         for player in team.players
                             .team-player-card

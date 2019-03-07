@@ -1,159 +1,338 @@
 {
-    "overwatch": {
-        "logo": "logo/overwatch.png",
-        "name": "Overwatch",
-        "dates": ["02/17/2019", "02/24/2019"],
-        "teams": [
-            {
-                "name": "What Howe?",
-                "level": "Varsity",
-                "game": "Overwatch",
-                "scores": [
-                    {
-                        "opponent": "Unknown",
-                        "record": "2-0",
-                        "date": "01/20/2019 5:30PM"
-                    },
-                    {
-                        "opponent": "CNU?",
-                        "record": "1-2",
-                        "date": "01/20/2019 7:00PM"
-                    },
-                    {
-                        "opponent": "Unknown",
-                        "record": "2-0",
-                        "date": "01/20/2019 8:30PM"
-                    },
-                    {
-                        "opponent": "Unknown",
-                        "record": "2-0",
-                        "date": "01/27/2019 5:30PM"
-                    },
-                    {
-                        "opponent": "Unknown",
-                        "record": "2-0",
-                        "date": "01/27/2019 7:00PM"
-                    },
-                    {
-                        "opponent": "NJIT",
-                        "record": "0-2",
-                        "date": "01/27/2019 8:30PM"
-                    },
-                    {
-                        "opponent": "Unknown",
-                        "record": "2-0",
-                        "date": "02/03/2019 7:00PM"
-                    },
-                    {
-                        "opponent": "Unknown",
-                        "record": "2-0",
-                        "date": "02/03/2019 8:30PM"
-                    },
-                    {
-                        "opponent": "Unknown",
-                        "record": "2-0",
-                        "result": "W",
-                        "date": "02/10/2019 7:00PM"
-                    },
-                    {
-                        "opponent": "Unknown",
-                        "record": "2-0",
-                        "date": "02/10/2019 8:30PM"
-                    },
-                    {
-                        "opponent": "Unknown",
-                        "record": "2-0",
-                        "date": "02/17/2019 7:00PM"
-                    },
-                    {
-                        "opponent": "Unknown",
-                        "record": "2-0",
-                        "result": "W",
-                        "date": "02/17/2019 8:30PM"
-                    },
-                    {
-                        "opponent": "Hofstra",
-                        "record": "2-0",
-                        "date": "02/24/2019 7:00PM"
-                    },
-                    {
-                        "opponent": "Columbia",
-                        "record": "2-0",
-                        "date": "02/24/2019 9:00PM"
-                    }
-                ],
-                "players": [
-                    {
-                        "tag": "Legendary",
-                        "name": "Adam Papenhausen",
-                        "major": "Business & Technology",
-                        "year": "2022"
-                    },
-                    {
-                        "tag": "Angular",
-                        "name": "Miles Rosenberg",
-                        "major": "Computer Science",
-                        "year": "2022"
-                    },
-                    {
-                        "tag": "NisePanda",
-                        "name": "Tegh Johar",
-                        "major": "Applied Mathematics",
-                        "year": "2022"
-                    },
-                    {
-                        "tag": "NisePanda",
-                        "name": "Tegh Johar",
-                        "major": "Applied Mathematics",
-                        "year": "2022"
-                    },
-                    {
-                        "tag": "NisePanda",
-                        "name": "Tegh Johar",
-                        "major": "Applied Mathematics",
-                        "year": "2022"
-                    },
-                    {
-                        "tag": "NisePanda",
-                        "name": "Tegh Johar",
-                        "major": "Applied Mathematics",
-                        "year": "2022"
-                    },
-                    {
-                        "tag": "NisePanda",
-                        "name": "Tegh Johar",
-                        "major": "Applied Mathematics",
-                        "year": "2022"
-                    }
-                ]
-            },
-            {
-                "name": "Altofer's Avengers",
-                "level": "Junior Varsity",
-                "game": "Overwatch",
-                "scores": [],
-                "players": [
-                    {
-                        "tag": "RobotWizard",
-                        "name": "Dylan Regan",
-                        "major": "Computer Science",
-                        "year": "2022"
-                    }
-                ]
-            }
+  "overwatch": {
+    "logo": "logo/overwatch.png",
+    "name": "Overwatch",
+    "alias": "Overwatch",
+    "teams": [
+      {
+        "name": "What Howe?",
+        "level": "Varsity",
+        "scores": [
+          {
+            "opponent": "Unknown",
+            "record": "2-0",
+            "date": "01/20/2019 5:30PM"
+          },
+          {
+            "opponent": "CNU?",
+            "record": "1-2",
+            "date": "01/20/2019 7:00PM"
+          },
+          {
+            "opponent": "Unknown",
+            "record": "2-0",
+            "date": "01/20/2019 8:30PM"
+          },
+          {
+            "opponent": "Unknown",
+            "record": "2-0",
+            "date": "01/27/2019 5:30PM"
+          },
+          {
+            "opponent": "Unknown",
+            "record": "2-0",
+            "date": "01/27/2019 7:00PM"
+          },
+          {
+            "opponent": "NJIT",
+            "record": "0-2",
+            "date": "01/27/2019 8:30PM"
+          },
+          {
+            "opponent": "Unknown",
+            "record": "2-0",
+            "date": "02/03/2019 7:00PM"
+          },
+          {
+            "opponent": "Unknown",
+            "record": "2-0",
+            "date": "02/03/2019 8:30PM"
+          },
+          {
+            "opponent": "Unknown",
+            "record": "2-0",
+            "result": "W",
+            "date": "02/10/2019 7:00PM"
+          },
+          {
+            "opponent": "Unknown",
+            "record": "2-0",
+            "date": "02/10/2019 8:30PM"
+          },
+          {
+            "opponent": "Unknown",
+            "record": "2-0",
+            "date": "02/17/2019 7:00PM"
+          },
+          {
+            "opponent": "Unknown",
+            "record": "2-0",
+            "result": "W",
+            "date": "02/17/2019 8:30PM"
+          },
+          {
+            "opponent": "Hofstra",
+            "record": "2-0",
+            "date": "02/24/2019 7:00PM"
+          },
+          {
+            "opponent": "Columbia",
+            "record": "2-0",
+            "date": "02/24/2019 9:00PM"
+          }
+        ],
+        "players": [
+          {
+            "tag": "Legendary",
+            "name": "Adam P",
+            "major": "Business & Technology",
+            "year": "2022"
+          },
+          {
+            "tag": "Angular",
+            "name": "Miles R",
+            "major": "Computer Science",
+            "year": "2022"
+          },
+          {
+            "tag": "NisePanda",
+            "name": "Tegh J",
+            "major": "Pure & Applied Math",
+            "year": "2022"
+          },
+          {
+            "tag": "goldbananas",
+            "name": "Greg M",
+            "major": "Chemical Engineering",
+            "year": "2021"
+          },
+          {
+            "tag": "invertigo",
+            "name": "Aaron J",
+            "major": "Cybersecurity",
+            "year": "2020"
+          },
+          {
+            "tag": "KingUltimate",
+            "name": "YO DAWG",
+            "major": "LMK BRO",
+            "year": "20<>"
+          }
         ]
-    },
-    "cs:go": {
-        "logo": "logo/csgo.png",
-        "name": "Counter Strike: Global Offensive",
-        "teams": [
-            {
-                "name": "Aupaire Hand",
-                "level": "Varsity",
-                "game": "CS:GO",
-                "scores": [],
-                "players": []
-            }
+      },
+      {
+        "name": "Altorfer's Avengers",
+        "level": "Junior Varsity",
+        "scores": [],
+        "players": [
+          {
+            "tag": "MarLap2000",
+            "name": "Mark L",
+            "major": "Mechanical Engineering",
+            "year": "2022"
+          },
+          {
+            "tag": "LethalMouse",
+            "name": "Andrea M",
+            "major": "Computer Science",
+            "year": "2022"
+          },
+          {
+            "tag": "Zerat",
+            "name": "Eric P",
+            "major": "Chemical Engineering",
+            "year": "2021"
+          },
+          {
+            "tag": "Triceratops",
+            "name": "Roni S",
+            "major": "Computer Engineering",
+            "year": "2021"
+          },
+          {
+            "tag": "Raincloud",
+            "name": "Tommy B",
+            "major": "Chemical Engineering",
+            "year": "2021"
+          },
+          {
+            "tag": "Stik",
+            "name": "Jake J",
+            "major": "Software Engineering",
+            "year": "2022"
+          }
         ]
-    }
+      },
+      {
+        "name": "Skyline",
+        "level": "Casual",
+        "scores": [],
+        "players": [
+          {
+            "tag": "pufflegod",
+            "name": "Ryan M",
+            "major": "Computer Science",
+            "year": "2021"
+          },
+          {
+            "tag": "DoubleA",
+            "name": "Aaron N",
+            "major": "Quantitative Finance",
+            "year": "2020"
+          },
+          {
+            "tag": "RobotWizard",
+            "name": "Dylan R",
+            "major": "Computer Science",
+            "year": "2022"
+          }
+        ]
+      }
+    ]
+  },
+  "cs:go": {
+    "logo": "logo/csgo.png",
+    "name": "Counter Strike: Global Offensive",
+    "alias": "CS:GO",
+    "teams": [
+      {
+        "name": "Attila's Army",
+        "level": "Varsity",
+        "scores": [],
+        "players": [
+          {
+            "tag": "Karo",
+            "name": "James R",
+            "major": "Mechanical Engineering",
+            "year": "2022"
+          },
+          {
+            "tag": "NuzzyFutts",
+            "name": "Aimal W",
+            "major": "Computer Science",
+            "year": "2019"
+          },
+          {
+            "tag": "ProSim",
+            "name": "Steven F",
+            "major": "Cybersecurity",
+            "year": "2022"
+          },
+          {
+            "tag": "Burnt_taco77",
+            "name": "Ryan M",
+            "major": "Computer Science",
+            "year": "2022"
+          }
+        ]
+      }
+    ]
+  },
+  "hearthstone": {
+    "logo": "logo/hearthstone.png",
+    "name": "Hearthstone",
+    "alias": "Hearthstone",
+    "teams": [
+      {
+        "name": "40 Duck Pack",
+        "level": "?",
+        "scores": [],
+        "players": [
+          {
+            "tag": "otterguy12",
+            "name": "Will D",
+            "major": "Engineering Undecided",
+            "year": "2022"
+          },
+          {
+            "tag": "RobotWizard",
+            "name": "Dylan R",
+            "major": "Computer Science",
+            "year": "2022"
+          }
+        ]
+      },
+      {
+        "name": "Vicious Pterroducks",
+        "level": "?",
+        "scores": [],
+        "players": [
+          {
+            "tag": "Cocosbean",
+            "name": "Nicolas D",
+            "major": "Computer Science",
+            "year": "2022"
+          },
+          {
+            "tag": "Psyqo",
+            "name": "Ryan L",
+            "major": "Physics & Math",
+            "year": "2021"
+          }
+        ]
+      }
+    ]
+  },
+  "rocketleague": {
+    "logo": "logo/rocketleague.png",
+    "name": "Rocket League",
+    "teams": [
+      {
+        "name": "Duck Dynasty",
+        "level": "?",
+        "scores": [],
+        "players": [
+          {
+            "tag": "✪ Govno",
+            "name": "Liam K",
+            "major": "Computer Science",
+            "year": "2021"
+          },
+          {
+            "tag": "TheRock1211",
+            "name": "Nikolas S",
+            "major": "Computer Science",
+            "year": "2022"
+          }
+        ]
+      }
+    ]
+  },
+  "heroesofthestorm": {
+    "logo": "logo/hots.png",
+    "name": "Heroes of the Storm",
+    "teams": [
+      {
+        "name": "yeet.",
+        "level": "Pro",
+        "scores": [],
+        "players": [
+          {
+            "tag": "Psyqo",
+            "name": "Ryan L",
+            "major": "Physics & Math",
+            "year": "2021"
+          },
+          {
+            "tag": "zap",
+            "name": "Connor Z",
+            "major": "Cybersecurity",
+            "year": "2019"
+          },
+          {
+            "tag": "Directrix",
+            "name": "Nick D",
+            "major": "Computer Science",
+            "year": "2019"
+          },
+          {
+            "tag": "RobotWizard",
+            "name": "Dylan R",
+            "major": "Computer Science",
+            "year": "2022"
+          }
+        ]
+      }
+    ]
+  }
 }
