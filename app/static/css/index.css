@@ -96,10 +96,8 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 1rem 0; }
-    #stream-embed .stream-container {
-      height: 100%;
-      width: 100%; }
+    margin: 1rem 0;
+    width: 60%; }
 
 .main-content {
   align-items: center;
