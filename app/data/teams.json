@@ -276,6 +276,7 @@
   "rocketleague": {
     "logo": "logo/rocketleague.png",
     "name": "Rocket League",
+    "alias": "RL",
     "teams": [
       {
         "name": "Duck Dynasty",
