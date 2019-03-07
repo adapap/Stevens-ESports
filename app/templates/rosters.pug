@@ -11,11 +11,11 @@ block content
         for game in games
             for team in game.teams
                 .team-container(id='#{team._id}')
-                    .team-name #{game.name} - #{team.level}
+                    .team-name #{game.alias} - #{team.level}
                     .team-players
                         for player in team.players
                             .team-player-card
-                                .player-image IMG
+                                .player-image
                                 .player-info
                                     .player-tag #{player.tag}
                                     .player-name #{player.name}

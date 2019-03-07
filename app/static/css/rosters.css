@@ -129,7 +129,9 @@
         width: 12.5rem; }
         .team-container .team-players .team-player-card .player-image {
           align-items: center;
-          background: #f2f2f2;
+          background: url('/static/assets/unknown.png');
+          background-position: top center;
+          background-size: cover;
           display: flex;
           height: 60%;
           justify-content: center;
@@ -167,32 +169,51 @@
   #footer #games {
     align-items: center;
     background: #444;
+    box-sizing: border-box;
     display: flex;
     height: 100%;
     justify-content: flex-start;
-    overflow-x: auto;
+    overflow-x: scroll;
     width: 90%; }
-    #footer #games .game-container {
-      align-items: center;
-      display: flex;
-      height: 100%;
-      margin: 0 0.5rem;
-      width: 15rem; }
-      #footer #games .game-container .game-logo {
-        width: 25%; }
-        #footer #games .game-container .game-teams {
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          text-align: center; }
-          #footer #games .game-container .game-teams .game-logo {
+    #footer #games::-webkit-scrollbar {
+      height: 0;
+      width: 0; }
+      #footer #games::-webkit-scrollbar-thumb {
+        height: 0;
+        width: 0; }
+        #footer #games::-webkit-scrollbar-track {
+          height: 0;
+          width: 0; }
+          #footer #games .game-container {
+            align-items: center;
+            display: flex;
             height: 100%;
-            margin: 0;
-            width: auto; }
-            #footer #games .game-container .game-teams .team {
-              color: white;
-              margin-left: 1rem;
-              text-decoration: none; }
+            justify-content: center;
+            margin: 0 0.5rem;
+            min-width: 15rem; }
+            #footer #games .game-container .game-logo {
+              width: 25%; }
+              #footer #games .game-container .game-teams {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: center; }
+                #footer #games .game-container .game-teams .game-logo {
+                  height: 100%;
+                  margin: 0;
+                  width: auto; }
+                  #footer #games .game-container .game-teams .team {
+                    -webkit-transition: all 0.2s ease-in-out;
+                    -moz-transition: all 0.2s ease-in-out;
+                    -ms-transition: all 0.2s ease-in-out;
+                    -o-transition: all 0.2s ease-in-out;
+                    transition: all 0.2s ease-in-out;
+                    color: white;
+                    font-size: 0.9rem;
+                    margin-left: 1rem;
+                    text-decoration: none; }
+                    #footer #games .game-container .game-teams .team:hover {
+                      color: #b2b2b2; }
   #footer #scroll-top-container {
     align-items: center;
     display: flex;

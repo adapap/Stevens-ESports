@@ -301,6 +301,7 @@
   "heroesofthestorm": {
     "logo": "logo/hots.png",
     "name": "Heroes of the Storm",
+    "alias": "HOTS",
     "teams": [
       {
         "name": "yeet.",

@@ -16,10 +16,11 @@ class Player:
 
 class Team:
     """A team to be listed on the roster page."""
-    def __init__(self, data):
+    def __init__(self, data, game):
         self.name = data.get('name')
         self.level = data.get('level')
         self.scores = data.get('scores')
+        self.game = game
         self.players = [Player(x) for x in data.get('players')]
 
     @property
@@ -38,9 +39,10 @@ class Game:
     """A collection of teams for a game."""
     def __init__(self, data):
         self.name = data.get('name')
+        self.alias = data.get('alias')
         self.logo = data.get('logo')
         self.dates = data.get('dates')
-        self.teams = [Team(x) for x in data.get('teams')]
+        self.teams = [Team(x, self.alias) for x in data.get('teams')]
 
     @property
     def num_matches(self):
