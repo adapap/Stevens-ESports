@@ -114,9 +114,9 @@
           },
           {
             "tag": "KingUltimate",
-            "name": "YO DAWG",
-            "major": "LMK BRO",
-            "year": "20<>"
+            "name": "Nick A",
+            "major": "Computer Science",
+            "year": "2021"
           }
         ]
       },
@@ -185,6 +185,24 @@
             "name": "Dylan R",
             "major": "Computer Science",
             "year": "2022"
+          },
+          {
+            "tag": "Duncgan",
+            "name": "Duncan G",
+            "major": "?",
+            "year": "?"
+          },
+          {
+            "tag": "EllisMcGruber",
+            "name": "Daniel C",
+            "major": "?",
+            "year": "?"
+          },
+          {
+            "tag": "Breakfast",
+            "name": "Brennan C",
+            "major": "?",
+            "year": "?"
           }
         ]
       }
@@ -253,7 +271,7 @@
         ]
       },
       {
-        "name": "Vicious Pterroducks",
+        "name": "Ravenous Pterroducks",
         "level": "?",
         "scores": [],
         "players": [

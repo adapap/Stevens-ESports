@@ -10,13 +10,13 @@ def index():
     """The homepage for the website."""
     return flask.render_template('index.pug')
 
-@bp.route('/news.html')
+@bp.route('/news')
 def news():
     """News pertaining to Stevens Esports."""
     games = data.get_games()
     return flask.render_template('news.pug', games=games)
 
-@bp.route('/rosters.html')
+@bp.route('/rosters')
 def rosters():
     """Listing of all Stevens Esports teams."""
     games = data.get_games()
