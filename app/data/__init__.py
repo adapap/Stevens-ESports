@@ -18,7 +18,6 @@ class Team:
     """A team to be listed on the roster page."""
     def __init__(self, data, game):
         self.name = data.get('name')
-        self.level = data.get('level')
         self.scores = data.get('scores')
         self.game = game
         self.players = [Player(x) for x in data.get('players')]

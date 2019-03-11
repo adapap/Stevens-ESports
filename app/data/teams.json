@@ -6,7 +6,6 @@
     "teams": [
       {
         "name": "What Howe?",
-        "level": "Varsity",
         "scores": [
           {
             "opponent": "Unknown",
@@ -122,7 +121,6 @@
       },
       {
         "name": "Altorfer's Avengers",
-        "level": "Junior Varsity",
         "scores": [],
         "players": [
           {
@@ -165,7 +163,6 @@
       },
       {
         "name": "Skyline",
-        "level": "Casual",
         "scores": [],
         "players": [
           {
@@ -215,7 +212,6 @@
     "teams": [
       {
         "name": "Attila's Army",
-        "level": "Varsity",
         "scores": [],
         "players": [
           {
@@ -241,6 +237,12 @@
             "name": "Ryan M",
             "major": "Computer Science",
             "year": "2022"
+          },
+          {
+            "tag": "pnguin",
+            "name": "Name McName",
+            "major": "Major Tom",
+            "year": "2000"
           }
         ]
       }
@@ -253,7 +255,6 @@
     "teams": [
       {
         "name": "40 Duck Pack",
-        "level": "?",
         "scores": [],
         "players": [
           {
@@ -272,7 +273,6 @@
       },
       {
         "name": "Ravenous Pterroducks",
-        "level": "?",
         "scores": [],
         "players": [
           {
@@ -298,7 +298,6 @@
     "teams": [
       {
         "name": "Duck Dynasty",
-        "level": "?",
         "scores": [],
         "players": [
           {
@@ -324,7 +323,6 @@
     "teams": [
       {
         "name": "yeet.",
-        "level": "Pro",
         "scores": [],
         "players": [
           {
